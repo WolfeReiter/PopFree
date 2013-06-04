@@ -1,0 +1,13 @@
+﻿Copyright (C) 2010 WolfeReiter, LLC (http://www.wolfereiter.com
+
+ConsoleSpinner class Copyright (C) 2009 Joel Coehoorn.
+NDesk.Options/Mono.Options Copyright (C) 2008 Novell (http://www.novell.com)
+
+DumpPop is free software; you can redistribute it and/or modify
+it under the terms of the MIT License as published by the 
+Open Source Initiative.
+
+DumpPop is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+Lesser MIT License for more details.
