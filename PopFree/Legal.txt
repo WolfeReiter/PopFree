@@ -1,6 +1,6 @@
 ﻿Copyright 2010 WolfeReiter, LLC.
 
-Copyright (C) 2010 WolfeReiter, LLC (http://www.wolfereiter.com
+Copyright (C) 2010 WolfeReiter, LLC (http://www.wolfereiter.com)
 
 PopFree is free software; you can redistribute it and/or modify
 it under the terms of the MIT License as published by the 
