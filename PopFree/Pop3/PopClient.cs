@@ -109,7 +109,7 @@ namespace PopFree.Pop3
         /// Is the client connected.
         /// </summary>
         /// <exception cref="System.IO.IOException">Throws if there is a problem reading from the Stream.</exception>
-        /// <exception cref="Systemn.ObjectDisposedException">Throws if the Stream or StreamReader for the connection has been disposed.</exception>
+        /// <exception cref="System.ObjectDisposedException">Throws if the Stream or StreamReader for the connection has been disposed.</exception>
         private bool Connected
         {
             get
@@ -165,7 +165,6 @@ namespace PopFree.Pop3
 		/// Sends a command to the POP server.
 		/// </summary>
 		/// <param name="cmd">command to send to server</param>
-		/// <param name="blnSilent">Do not give error</param>
 		/// <returns>true if server responded "+OK"</returns>
         private PopCommandResponse SendCommand( string cmd )
         {
@@ -636,7 +635,7 @@ namespace PopFree.Pop3
         /// Write a message retrieved from the server into the stream provided.
         /// </summary>
         /// <param name="stream">Stream to write the message into.</param>
-        /// <param name="number">message number on server</param>
+        /// <param name="messageNumber">message number on server</param>
         /// <param name="fetchHeaderOnly">Whether to fetch header instead of entire message.</param>
         public void WriteMessageToStream( Stream stream, int messageNumber, bool fetchHeaderOnly )
 		{
@@ -656,8 +655,8 @@ namespace PopFree.Pop3
 		/// <summary>
 		/// fetches a message or a message header
 		/// </summary>
-		/// <param name="cmd">Command to send to Pop server</param>
-		/// <param name="blnOnlyHeader">Only return message header?</param>
+		/// <param name="messageNumber">message number on the server</param>
+        /// <param name="fetchHeaderOnly">Only return message header?</param>
 		/// <returns>Stream of mime-encoded text data. Returns null of the command failed.</returns>
         private TextReader GetMessageReader( int messageNumber, bool fetchHeaderOnly )
 		{

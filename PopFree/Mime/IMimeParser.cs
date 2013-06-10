@@ -8,7 +8,6 @@ namespace PopFree.Mime
         /// <summary>
         /// Create NameValueCollection from a MIME stream reader. The calling code is responsible for closing the reader and the stream.
         /// </summary>
-        /// <param name="stream">MIME stream</param>
         /// <returns>Collection of headers. Returns null if the stream is null.</returns>
         NameValueCollection ParseHeaders( TextReader reader );
         /// <summary>

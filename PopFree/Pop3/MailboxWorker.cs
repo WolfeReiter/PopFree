@@ -15,7 +15,6 @@ namespace PopFree.Pop3
         /// MailboxWorker connects to a POP3 server and retrieves mail. POP3 usually only allows one client at a time to access
         /// the server. There must only be one MailboxWorker instance for each mailbox or the workers will corrupt each other.
         /// </summary>
-        /// <param name="c"></param>
         public MailboxWorker() { }
 
         /// <summary>

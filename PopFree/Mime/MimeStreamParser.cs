@@ -426,7 +426,8 @@ namespace PopFree.Mime
         /// Extract headers from the text stream into the Headers collection of the ReceivedMessage object provided.
         /// </summary>
         /// <param name="reader">TextReader providing the data stream to be parsed</param>
-        /// <param name="message">ReceivedMessage object which will have its Headers collection populated</param>
+        /// <param name="messageHeaders">Collection of message headers.</param>
+        /// <param name="rawheaders">Raw text of headers as received from server.</param>
         /// <returns>Returns false if no headers were found. Otherwise returns true.</returns>
         private static bool LoadHeaders( TextReader reader, NameValueCollection messageHeaders, StringBuilder rawheaders )
         {
