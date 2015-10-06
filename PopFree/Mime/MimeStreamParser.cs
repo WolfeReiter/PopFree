@@ -382,7 +382,11 @@ namespace PopFree.Mime
                 if( !string.IsNullOrEmpty( message.ReceivedHeaders["from"] ) )
                     message.From = new MailAddress( message.ReceivedHeaders["from"] );
                 if( !string.IsNullOrEmpty( message.ReceivedHeaders["reply-to"] ) )
+#if NET_FX4
+                    message.ReplyToList.Add(new MailAddress(message.ReceivedHeaders["reply-to"]));
+#else
                     message.ReplyTo = new MailAddress( message.ReceivedHeaders["reply-to"] );
+#endif
             }
             catch( Exception ex )
             {
