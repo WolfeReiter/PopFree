@@ -1,3 +1,5 @@
+This project is now unmaintanted. We recommend using MimeKit and MailKit.
+
 PopFree: Open Source C# MIME Parser and Simple POP3 Client for .Net and Mono
 ============================================================================
 
